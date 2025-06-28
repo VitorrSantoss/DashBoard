@@ -1,0 +1,81 @@
+body {
+  display: flex;
+  justify-content: center;
+  /* Ocupa 100% da altura da tela */
+  align-items: center;
+  background-image: url(/images/ArvoresRoxas.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 1rem; /* Base para escalar textos */
+  margin: 0; /* Remove margens padrão */
+  min-height: 100vh; /* Ocupa no mínimo 100% da altura da tela */
+  width: 100%; /* Largura total */
+}
+
+.caixa-mae {
+  text-align: center;
+  width: 100vh;
+  height: 350px;
+  color: whitesmoke;
+  transform: scale(1.2);
+  transform-origin: center;
+  
+
+}
+
+.form-control1 {
+  border: 1px solid rgb(255, 255, 255);
+  width: 250px;
+  height: 40px;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+
+.form-control2 {
+  border: 1px solid rgb(255, 255, 255);
+  width: 250px;
+  height: 40px;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  background-color: transparent;
+}
+
+::placeholder {
+  color: rgb(55, 9, 99);
+  font-weight: bold;
+  padding: 10px;
+}
+
+.mb {
+  margin-top: 10px;
+  
+}
+
+.form-check-input {
+  margin-right: 70px;
+}
+
+button {
+  margin-top: 30px;
+  width: 180px;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid rgb(55, 9, 99);
+  background-color: transparent;
+  color: whitesmoke;
+}
+
+button:hover {
+  background-color: rgb(55, 9, 99);
+  border: 2px solid rgb(146, 24, 184);
+  transition: 0.15s;
+}
+
+.link {
+  text-decoration: none;
+  color: whitesmoke;
+}
