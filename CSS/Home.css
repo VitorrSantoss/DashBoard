@@ -1,0 +1,60 @@
+body {
+  background-color: #3a3331;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: rgb(155, 152, 152);
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: whitesmoke;
+}
+
+#divisor {
+  background-color: rgb(185, 181, 181);
+}
+
+#home {
+  color: whitesmoke;
+}
+
+.row {
+  margin-top: 50px;
+}
+
+footer {
+  background-color: #212529;
+}
+
+#pa {
+  color: whitesmoke;
+}
+
+.nav-link {
+  color: whitesmoke;
+}
+
+#card {
+  background-color: #212529;
+}
+
+#h5,p {
+  color: whitesmoke;
+}
+
+.accordion {
+  width: 100vh;
+  
+}
+
+.accordion-item {
+  background-color: #292d31;
+  color: whitesmoke;
+}
+
+.accordion-button {
+  background-color: #212529;
+  color: whitesmoke;
+}
+
