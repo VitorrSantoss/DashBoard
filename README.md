@@ -38,17 +38,4 @@ Cada pasta contém:
 - Exemplos práticos de implementação
 - Variações e experimentos realizados
 
-## 🚀 Como Navegar
-
-1. **Fundamentos:** Conceitos básicos e primeiros exercícios
-2. **Layouts:** Técnicas de posicionamento e organização
-3. **Projetos:** Implementações completas e práticas
-4. **Recursos:** Material de apoio e referências
-
-## 📝 Anotações
-
-Os códigos contêm comentários detalhados para facilitar a revisão e compreensão dos conceitos estudados.
-
----
-
 **Desenvolvido durante os estudos de HTML e CSS**
