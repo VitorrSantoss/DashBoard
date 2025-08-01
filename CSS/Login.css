@@ -1,81 +1,164 @@
+:root {
+  --primary-color: #370963;
+  --secondary-color: #9218b8;
+  --text-color: whitesmoke;
+  --input-border: rgba(255, 255, 255, 0.7);
+  --input-focus: rgba(146, 24, 184, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   display: flex;
   justify-content: center;
-  /* Ocupa 100% da altura da tela */
   align-items: center;
-  background-image: url(/images/ArvoresRoxas.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  font-size: 1rem; /* Base para escalar textos */
-  margin: 0; /* Remove margens padrão */
-  min-height: 100vh; /* Ocupa no mínimo 100% da altura da tela */
-  width: 100%; /* Largura total */
+  min-height: 100vh;
+  background: url(/images/ArvoresRoxas.jpg) center/cover no-repeat fixed;
+  font-family: Arial, sans-serif;
+  padding: 20px;
 }
 
-.caixa-mae {
-  text-align: center;
-  width: 100vh;
-  height: 350px;
-  color: whitesmoke;
-  transform: scale(1.2);
-  transform-origin: center;
-  
-
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+color: whitesmoke;
 }
 
-.form-control1 {
-  border: 1px solid rgb(255, 255, 255);
-  width: 250px;
-  height: 40px;
-  border-top: transparent;
-  border-left: transparent;
-  border-right: transparent;
-  margin-bottom: 10px;
-  background-color: transparent;
-}
-
-.form-control2 {
-  border: 1px solid rgb(255, 255, 255);
-  width: 250px;
-  height: 40px;
-  border-top: transparent;
-  border-left: transparent;
-  border-right: transparent;
-  background-color: transparent;
-}
-
-::placeholder {
-  color: rgb(55, 9, 99);
-  font-weight: bold;
-  padding: 10px;
-}
-
-.mb {
-  margin-top: 10px;
-  
-}
-
-.form-check-input {
-  margin-right: 70px;
-}
-
-button {
-  margin-top: 30px;
-  width: 180px;
-  height: 30px;
+.login-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
   border-radius: 10px;
-  border: 2px solid rgb(55, 9, 99);
+  padding: 30px;
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.5s ease-out;
+  color: whitesmoke;
+}
+
+.login-title {
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-bottom: 1px solid var(--input-border);
   background-color: transparent;
-  color: whitesmoke;
+  color: var(--text-color);
+  font-size: 1rem;
+  transition: all 0.3s ease;
 }
 
-button:hover {
-  background-color: rgb(55, 9, 99);
-  border: 2px solid rgb(146, 24, 184);
-  transition: 0.15s;
+.form-input:focus {
+  outline: none;
+  border-bottom-color: var(--secondary-color);
+  box-shadow: 0 2px 0 0 var(--input-focus);
 }
 
-.link {
+.form-input::placeholder {
+  color: var(--primary-color);
+  font-weight: bold;
+  opacity: 0.8;
+  color: #a78cb6;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.remember-me {
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.remember-me input {
+  cursor: pointer;
+}
+
+.create-account {
+  color: var(--text-color);
   text-decoration: none;
-  color: whitesmoke;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.create-account:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: transparent;
+  color: var(--text-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: var(--primary-color);
+  border-color: var(--secondary-color);
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .login-box {
+    padding: 25px;
+  }
+
+  .login-title {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  }
+
+  .form-input {
+    padding: 10px 12px;
+  }
+
+  .login-button {
+    padding: 10px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
