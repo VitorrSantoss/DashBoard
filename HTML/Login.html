@@ -1,42 +1,45 @@
 <!DOCTYPE html>
-<html lang="pr-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/Images/LOGO PROJETO.png">
+    <title>Login</title>
     <link rel="stylesheet" href="/CSS/Login.css">
-    <title>LOGIN</title>
-  </head>
-  <body>
-    <!-- LOGIN   -->
-    <div class="caixa-mae">
-      <h1>Login</h1>
-      <form>
-        <div class="mb-3">
-          <input
-            type="email"
-            class="form-control1"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            placeholder="Usuário"
-          />
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h1 class="login-title">Login</h1>
+            <form class="login-form">
+                <div class="form-group">
+                    <input
+                        type="text"
+                        class="form-input"
+                        id="username"
+                        placeholder="Usuário"
+                        required
+                    >
+                </div>
+                <div class="form-group">
+                    <input
+                        type="password"
+                        class="form-input"
+                        id="password"
+                        placeholder="Senha"
+                        required
+                    >
+                </div>
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" id="remember">
+                        Lembrar-me
+                    </label>
+                    <a href="#" class="create-account">Criar conta</a>
+                </div>
+                <button type="submit" class="login-button">Entrar</button>
+            </form>
         </div>
-        <div class="mb-3">
-          <input
-            type="password"
-            class="form-control2"
-            id="exampleInputPassword1"
-            placeholder="Senha"
-          />
-        </div>
-        <div class="mb form-check">
-          <label class="form-check-label" for="exampleCheck1"
-          >Lembrar-me</label
-          >
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <a class="link" href="#">Criar conta</a>
-        </div>
-        <button type="submit" class="btn btn-primary">Entrar</button>
-      </form>
     </div>
-  </body>
+</body>
 </html>
